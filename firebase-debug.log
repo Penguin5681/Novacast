@@ -1,0 +1,140 @@
+[debug] [2025-08-21T04:05:17.354Z] ----------------------------------------------------------------------
+[debug] [2025-08-21T04:05:17.358Z] Command:       /home/penguin/.nvm/versions/node/v22.18.0/bin/node /home/penguin/.nvm/versions/node/v22.18.0/bin/firebase init
+[debug] [2025-08-21T04:05:17.360Z] CLI Version:   14.13.0
+[debug] [2025-08-21T04:05:17.361Z] Platform:      linux
+[debug] [2025-08-21T04:05:17.361Z] Node Version:  v22.18.0
+[debug] [2025-08-21T04:05:17.362Z] Time:          Thu Aug 21 2025 09:35:17 GMT+0530 (India Standard Time)
+[debug] [2025-08-21T04:05:17.362Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-21T04:05:17.371Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-21T04:05:17.372Z] > authorizing via signed-in user (pranavsinha922@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/penguin/WebstormProjects/novacast
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-08-21T04:05:28.018Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:28.019Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:28.022Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-08-21T04:05:28.832Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-08-21T04:05:28.833Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Don't want to scroll through all your projects? If you know your project ID, you can initialize it directly using firebase init --project <project_id>.
+ 
+[info] i  Using project novacast-9d690 (NovaCast) 
+[info] 
+=== App Hosting Setup
+[debug] [2025-08-21T04:05:33.726Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:33.726Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:33.727Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/novacast-9d690/billingInfo [none]
+[debug] [2025-08-21T04:05:35.161Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/novacast-9d690/billingInfo 200
+[debug] [2025-08-21T04:05:35.161Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/novacast-9d690/billingInfo {"name":"projects/novacast-9d690/billingInfo","projectId":"novacast-9d690","billingAccountName":"billingAccounts/01266B-2AAFCC-0E668C","billingEnabled":true}
+[debug] [2025-08-21T04:05:35.162Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:35.162Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:35.163Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-08-21T04:05:35.163Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/novacast-9d690
+[debug] [2025-08-21T04:05:37.195Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/firebaseapphosting.googleapis.com 200
+[debug] [2025-08-21T04:05:37.196Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-08-21T04:05:37.197Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:37.197Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:37.197Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/firebaseapphosting.googleapis.com:enable [none]
+[debug] [2025-08-21T04:05:37.197Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/firebaseapphosting.googleapis.com:enable x-goog-quota-user=projects/novacast-9d690
+[debug] [2025-08-21T04:05:37.823Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/firebaseapphosting.googleapis.com:enable 200
+[debug] [2025-08-21T04:05:37.823Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/firebaseapphosting.googleapis.com:enable [omitted]
+[debug] [2025-08-21T04:05:47.836Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:47.837Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:47.837Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:47.837Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:47.837Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:47.837Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:47.837Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:47.837Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:47.837Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:47.837Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:47.837Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:47.837Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:47.838Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/developerconnect.googleapis.com [none]
+[debug] [2025-08-21T04:05:47.838Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/developerconnect.googleapis.com x-goog-quota-user=projects/novacast-9d690
+[debug] [2025-08-21T04:05:47.840Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/cloudbuild.googleapis.com [none]
+[debug] [2025-08-21T04:05:47.840Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/cloudbuild.googleapis.com x-goog-quota-user=projects/novacast-9d690
+[debug] [2025-08-21T04:05:47.841Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/secretmanager.googleapis.com [none]
+[debug] [2025-08-21T04:05:47.841Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/secretmanager.googleapis.com x-goog-quota-user=projects/novacast-9d690
+[debug] [2025-08-21T04:05:47.843Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/run.googleapis.com [none]
+[debug] [2025-08-21T04:05:47.843Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/run.googleapis.com x-goog-quota-user=projects/novacast-9d690
+[debug] [2025-08-21T04:05:47.845Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/artifactregistry.googleapis.com [none]
+[debug] [2025-08-21T04:05:47.845Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/artifactregistry.googleapis.com x-goog-quota-user=projects/novacast-9d690
+[debug] [2025-08-21T04:05:47.846Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/iam.googleapis.com [none]
+[debug] [2025-08-21T04:05:47.846Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/iam.googleapis.com x-goog-quota-user=projects/novacast-9d690
+[debug] [2025-08-21T04:05:49.707Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/developerconnect.googleapis.com 200
+[debug] [2025-08-21T04:05:49.707Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/developerconnect.googleapis.com [omitted]
+[debug] [2025-08-21T04:05:49.707Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:49.707Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:05:49.707Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/developerconnect.googleapis.com:enable [none]
+[debug] [2025-08-21T04:05:49.707Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/developerconnect.googleapis.com:enable x-goog-quota-user=projects/novacast-9d690
+[debug] [2025-08-21T04:05:49.708Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/secretmanager.googleapis.com 200
+[debug] [2025-08-21T04:05:49.708Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/secretmanager.googleapis.com [omitted]
+[debug] [2025-08-21T04:05:49.711Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/iam.googleapis.com 200
+[debug] [2025-08-21T04:05:49.711Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/iam.googleapis.com [omitted]
+[debug] [2025-08-21T04:05:49.714Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/artifactregistry.googleapis.com 200
+[debug] [2025-08-21T04:05:49.714Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/artifactregistry.googleapis.com [omitted]
+[debug] [2025-08-21T04:05:49.790Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/run.googleapis.com 200
+[debug] [2025-08-21T04:05:49.790Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/run.googleapis.com [omitted]
+[debug] [2025-08-21T04:05:49.794Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/cloudbuild.googleapis.com 200
+[debug] [2025-08-21T04:05:49.794Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/cloudbuild.googleapis.com [omitted]
+[debug] [2025-08-21T04:05:50.260Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/developerconnect.googleapis.com:enable 200
+[debug] [2025-08-21T04:05:50.260Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/novacast-9d690/services/developerconnect.googleapis.com:enable [omitted]
+[debug] [2025-08-21T04:06:00.272Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:06:00.272Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:06:00.272Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/novacast-9d690/serviceAccounts/firebase-app-hosting-compute@novacast-9d690.iam.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-08-21T04:06:00.272Z] >>> [apiv2][(partial)header] POST https://iam.googleapis.com/v1/projects/novacast-9d690/serviceAccounts/firebase-app-hosting-compute@novacast-9d690.iam.gserviceaccount.com:testIamPermissions x-goog-quota-user=projects/novacast-9d690
+[debug] [2025-08-21T04:06:00.272Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/novacast-9d690/serviceAccounts/firebase-app-hosting-compute@novacast-9d690.iam.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-08-21T04:06:02.200Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/novacast-9d690/serviceAccounts/firebase-app-hosting-compute@novacast-9d690.iam.gserviceaccount.com:testIamPermissions 404
+[debug] [2025-08-21T04:06:02.200Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/novacast-9d690/serviceAccounts/firebase-app-hosting-compute@novacast-9d690.iam.gserviceaccount.com:testIamPermissions {"error":{"code":404,"message":"Unknown service account","status":"NOT_FOUND"}}
+[debug] [2025-08-21T04:06:02.201Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:06:02.201Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:06:02.201Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/novacast-9d690/serviceAccounts [none]
+[debug] [2025-08-21T04:06:02.201Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/novacast-9d690/serviceAccounts {"accountId":"firebase-app-hosting-compute","serviceAccount":{"displayName":"Firebase App Hosting compute service account","description":"Default service account used to run builds and deploys for Firebase App Hosting"}}
+[debug] [2025-08-21T04:06:03.017Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/novacast-9d690/serviceAccounts 200
+[debug] [2025-08-21T04:06:03.017Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/novacast-9d690/serviceAccounts [omitted]
+[debug] [2025-08-21T04:06:03.017Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:06:03.017Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:06:03.017Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/novacast-9d690:getIamPolicy [none]
+[debug] [2025-08-21T04:06:09.610Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/novacast-9d690:getIamPolicy 200
+[debug] [2025-08-21T04:06:09.610Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/novacast-9d690:getIamPolicy {"version":1,"etag":"BwY82DPwAH4=","bindings":[{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:211899994974@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-211899994974@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-211899994974@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:211899994974-compute@developer.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-211899994974@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@novacast-9d690.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@novacast-9d690.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:pranavsinha922@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-211899994974@serverless-robot-prod.iam.gserviceaccount.com"]}]}
+[debug] [2025-08-21T04:06:09.610Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:06:09.610Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:06:09.610Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/novacast-9d690:setIamPolicy [none]
+[debug] [2025-08-21T04:06:09.611Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/novacast-9d690:setIamPolicy {"policy":{"version":1,"etag":"BwY82DPwAH4=","bindings":[{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:211899994974@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-211899994974@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-211899994974@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:211899994974-compute@developer.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-211899994974@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@novacast-9d690.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@novacast-9d690.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@novacast-9d690.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:pranavsinha922@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-211899994974@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@novacast-9d690.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@novacast-9d690.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@novacast-9d690.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2025-08-21T04:06:10.790Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/novacast-9d690:setIamPolicy 200
+[debug] [2025-08-21T04:06:10.790Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/novacast-9d690:setIamPolicy {"version":1,"etag":"BwY82DWiNOM=","bindings":[{"role":"roles/cloudbuild.builds.builder","members":["serviceAccount:211899994974@cloudbuild.gserviceaccount.com"]},{"role":"roles/cloudbuild.serviceAgent","members":["serviceAccount:service-211899994974@gcp-sa-cloudbuild.iam.gserviceaccount.com"]},{"role":"roles/containerregistry.ServiceAgent","members":["serviceAccount:service-211899994974@containerregistry.iam.gserviceaccount.com"]},{"role":"roles/developerconnect.readTokenAccessor","members":["serviceAccount:firebase-app-hosting-compute@novacast-9d690.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:211899994974-compute@developer.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-211899994974@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@novacast-9d690.iam.gserviceaccount.com","serviceAccount:firebase-app-hosting-compute@novacast-9d690.iam.gserviceaccount.com"]},{"role":"roles/firebaseapphosting.computeRunner","members":["serviceAccount:firebase-app-hosting-compute@novacast-9d690.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@novacast-9d690.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:pranavsinha922@gmail.com"]},{"role":"roles/run.serviceAgent","members":["serviceAccount:service-211899994974@serverless-robot-prod.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:firebase-app-hosting-compute@novacast-9d690.iam.gserviceaccount.com"]}]}
+[info] i  This command links your local project to Firebase App Hosting. You will be able to deploy your web app with `firebase deploy` after setup. 
+[debug] [2025-08-21T04:06:22.923Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:06:22.923Z] Checked if tokens are valid: true, expires at: 1755752444491
+[debug] [2025-08-21T04:06:22.924Z] >>> [apiv2][query] GET https://firebaseapphosting.googleapis.com/v1beta/projects/novacast-9d690/locations/-/backends 
+[debug] [2025-08-21T04:06:25.037Z] <<< [apiv2][status] GET https://firebaseapphosting.googleapis.com/v1beta/projects/novacast-9d690/locations/-/backends 200
+[debug] [2025-08-21T04:06:25.037Z] <<< [apiv2][body] GET https://firebaseapphosting.googleapis.com/v1beta/projects/novacast-9d690/locations/-/backends {}
+[debug] [2025-08-21T04:06:41.017Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (/home/penguin/.nvm/versions/node/v22.18.0/lib/node_modules/firebase-tools/node_modules/@inquirer/core/dist/commonjs/lib/create-prompt.js:101:37)
+    at Interface.emit (node:events:518:28)
+    at Interface.emit (node:domain:489:12)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1132:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:271:20)
+    at ReadStream.emit (node:events:530:35)
+    at ReadStream.emit (node:domain:489:12)
+    at emitKeys (node:internal/readline/utils:370:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+[error] 
+[error] Error: An unexpected error has occurred.
