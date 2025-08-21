@@ -1,6 +1,6 @@
 // app/page.js
 'use client';
-import {useState, useEffect, useRef} from 'react';
+import {useState, useEffect, useRef, useMemo} from 'react';
 import {motion, AnimatePresence} from 'framer-motion';
 
 export default function AuthPage() {
@@ -14,6 +14,33 @@ export default function AuthPage() {
 	const [successMessage, setSuccessMessage] = useState('');
 	const [errorMessage, setErrorMessage] = useState('');
 	const containerRef = useRef(null);
+
+	const particles = useMemo(() => {
+		return [...Array(15)].map(() => ({
+			initial: {
+				x: Math.random() * 100,
+				y: Math.random() * 100,
+				scale: 0
+			},
+			animate: {
+				x: Math.random() * 100,
+				y: Math.random() * 100,
+				scale: Math.random() * 0.5 + 0.5,
+				rotate: Math.random() * 360
+			},
+			transition: {
+				duration: Math.random() * 10 + 10,
+				repeat: Infinity,
+				repeatType: "reverse"
+			},
+			style: {
+				width: `${Math.random() * 40 + 10}px`,
+				height: `${Math.random() * 40 + 10}px`,
+				top: `${Math.random() * 100}%`,
+				left: `${Math.random() * 100}%`,
+			}
+		}));
+	}, []);
 
 	const toggleMode = () => {
 		setIsLoginMode(!isLoginMode);
@@ -165,34 +192,16 @@ export default function AuthPage() {
 
 						{/* Floating Particles Background */}
 						<div className="absolute inset-0 overflow-hidden rounded-3xl z-0">
-							{[...Array(15)].map((_, i) => (
+							{particles.map((particle, i) => (
 								<motion.div
 									key={i}
-									initial={{
-										x: Math.random() * 100,
-										y: Math.random() * 100,
-										scale: 0
-									}}
-									animate={{
-										x: Math.random() * 100,
-										y: Math.random() * 100,
-										scale: Math.random() * 0.5 + 0.5,
-										rotate: Math.random() * 360
-									}}
-									transition={{
-										duration: Math.random() * 10 + 10,
-										repeat: Infinity,
-										repeatType: "reverse"
-									}}
+									initial={particle.initial}
+									animate={particle.animate}
+									transition={particle.transition}
 									className={`absolute rounded-full opacity-20 ${
 										isDarkMode ? 'bg-[#818CF8]' : 'bg-[#6366F1]'
 									}`}
-									style={{
-										width: `${Math.random() * 40 + 10}px`,
-										height: `${Math.random() * 40 + 10}px`,
-										top: `${Math.random() * 100}%`,
-										left: `${Math.random() * 100}%`,
-									}}
+									style={particle.style}
 								/>
 							))}
 						</div>
