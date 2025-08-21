@@ -31,7 +31,7 @@ export default function AuthPage() {
 			transition: {
 				duration: Math.random() * 10 + 10,
 				repeat: Infinity,
-				repeatType: "reverse"
+				repeatType: "reverse" as const
 			},
 			style: {
 				width: `${Math.random() * 40 + 10}px`,
